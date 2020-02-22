@@ -1,324 +1,263 @@
 {% load static %}
 
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang='en'>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>FranklyMade</title>
-
-  <!-- Bootstrap core CSS -->
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Evie by unDraw</title>
+  
+  <!-- from boostrap  -->
   <link href="{% static 'sitetemplate/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{% static 'sitetemplate/css/modern-business.css' %}" rel="stylesheet">
+  <link href="{% static 'sitetemplate/css/scrolling-nav.css' %}" rel="stylesheet">
 
-   <link href="{% static 'sitetemplate/css/basestyle.css' %}" rel="stylesheet"> 
-
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href="{% static 'sitetemplate/css/style.min.css' %}" />
+	<link rel='stylesheet' href="{% static 'sitetemplate/images' %}" />
 </head>
 
-<body>
 
+<body id="page-top">
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="/">FranklyMade</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about_blog' %}">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'portinfo' %}">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tutorials</a>
-        </li>
-
-          
         </ul>
       </div>
     </div>
   </nav>
-  
-  <!-- the showcase image -->
-  <header>
-    <div class="showcase">
-      <img   class="showcase" src="{% static  'sitetemplate/images/Frame 1.png' %}" alt="not found">
-    </div>
-  </header>
 
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Welcome To FranklyMade 
-      <small>code arena</small>
-    </h1>
-     <h5>Get started learning how to code with python </h5>
-     <h5>and web development using django a popular python frame work</h5>
-
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="#">Home</a>/ 
-      </li>
-     <a href="{% url 'index'%}"> <li class="breadcrumb-item active">Latest Tech News</li></a>
-    </ol>
-
-    <div class="row row-controler">
-
-     
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-        
-
-        <!-- Search Widget -->
-        <div class="card mb-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Categories Widget -->
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Learn python</a>
-        
-          
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Basic Concepts In Python </a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Control Structure</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success">Python Functions</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Python Modules</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Introduction to Functional Programing</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info">Object Oriented Programming</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-light">understanding Python List And Dictunary</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Python Projects</a>
-        </div><br><hr><br>
-
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Learn django</a>
-        
-          
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">setup a virtual environment for django</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Create a django project</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success">Create a django app</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">setup and understand urls</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Write some view functions</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info">Working with a database</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-light">Create some models</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Making migrations to the database</a>
-
-
-        <!-- this is the collapse for the side bar list items -->
-          <p>
-            <a class="btn btn-secondary text-center mt-4 list-group-item " data-toggle="collapse" href="#collapsedjango" role="button" aria-expanded="false" aria-controls="collapsedjango">
-              View More
-            </a>              
-           <div class="collapse" id="collapsedjango">
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Write more views</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">create templates</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success">How to raise 404 Error</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">The importance and how to use namespaces</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Handling the static files</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info">Django Projects</a>
-          </div>
-        </div>
-
-
-
-          
-
-
-        <!-- Side Widget -->
-        <!-- <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-          </div>
-  
-        -->      
-
-      </div>
- 
-
-
-      <!-- Blog Entries Column -->
-      <div class="col-md-8">  
-       
-             
-     <!-- the three cards from bootstrap -->
-        <div class="card-deck">
-          <div class="card mycard ">
-            <img src="{% static 'sitetemplate/images/python_logo.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title"></h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small class="text-muted"></small></p>
-            </div>
-          </div>
-          <div class="card mycard">
-            <img src="{% static 'sitetemplate/images/Group 2.png' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small class="text-muted"></small></p>
-            </div>
-          </div>
-          <div class="card mycard">
-            <img src="{% static 'sitetemplate/images/django_logo.jpg' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small class="text-muted"></small></p>
-            </div>
-          </div>
-        </div>
-             
-    <div class="mycontainer text-center">
-      <big>  this is a tutorial for complete beginner. It is designed to help you get an understanding
-            of the very basics of python programming as fast as possible 
-        
-        <h6>Here I will walk you through the very core concept of python programming.
-          Make sure you carry out the challenge projects to help you solidify your learning.
-          After walking through this python beginner to comfortable level we will be heading straight 
-          to web development with python and Django, believe me this is the most exciting part of programming.
-          You will be amazed at how mush and what you will learn in this tutorial.
-            
-        </h6> 
-      </big>   
-    </div>
-
+	<!-- Hero(extended Evie theme) navbar -->
+	<!-- <div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">Multi-Inspired</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div> -->
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<h1 class="hero__title">Multi-Inspired Digital Business Development Services</h1>
+						<p class="hero__text steps">We are Multi-Inspired we provide you with all that your business needs to succeed online.
+              we serve corperations, small and medium scale businesses, Individuals.
+            </p>
+						<!-- <a href="#" class="button button__accent ">Download Evie</a> -->
+						<a href="#" class="button hero__button">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero__sub">
+		<span id="scrollToNext" class="scroll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__dow' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
+	</div>
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container">
+			<h2>Services We Offer</h2>
+			<p>We offer a wide range of online services which includes </p>
+		</div>
+		<div class="container">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
             
-
-
-            <div class="text-center button-control" >
-              <small >hope you are excited let's jump right in</small> <br>
-            <a href="{% url 'python_intro' %}"><button type="button"  class="mybtn btn " >view all</button></a>
-          </div>
-
-        <!-- ((((((((((((((((((())))))))))))))))))) -->
-        <div class="card mb-3 mycard">
-          <img src="{% static 'sitetemplate/images/python_logoshow.jpg' %}" class="card-img-top image-resize" alt="...">
-          <div class="card-body text-center">
-            <h1 class="card-title text-center">What is python <small>{programming language}</small></h1>
-            <p class="card-text">Python is an interpreted, object-oriented,
-               high-level programming language with dynamic semantics. 
-               Its high-level built in data structures, 
-               combined with dynamic typing and dynamic binding, 
-               make it very attractive for Rapid Application Development,
-                as well as for use as a scripting or glue language to connect
-                 existing components together. Python's simple,
-                  easy to learn syntax emphasizes readability and 
-                  therefore reduces the cost of program maintenance. 
-                  Python supports modules and packages, which encourages
-                   program modularity and code reuse. The Python interpreter 
-                   and the extensive standard library are available in 
-                   source or binary form without charge for all major
-                    platforms, and can be freely distributed.
-                    <br>
-                  
-                    <a href="{% url 'python_intro' %}"><button type="button" class="btn btn-primary mt-5 mb-5" >start learning</button></a>
-                  </p>
-            <p class="card-text"><small class="text-muted"></small></p>
-          </div>
-        </div>
-        <div class="card mycard">
-          <img src="{% static 'sitetemplate/images/django_logo.jpg' %}" class="card-img-top image-resize" alt="...">
-
-          <div class="card-body text-center">
-            <h1 class="card-title text-center">What is django</h1>
-            <p class="card-text">Django is a free and open source web application
-               framework written in Python.
-            A framework is nothing more than a collection of modules that 
-            make development easier. They are grouped together, and allow
-              you to create applications or websites from an existing source, 
-              instead of from scratch.
-              This is how websites - even simple ones designed by a 
-              single person - can still include advanced functionality 
-              like authentication support, management and admin panels,
-               contact forms, comment boxes, file upload support, and more.
-                In other words, if you were creating a website from scratch
-                 you would need to develop these components yourself. 
-                 By using a framework instead, these components are already built,
-                  you just need to configure them properly to match your site.
-                  <br>
-
-                  <a href="{% url 'django_intro' %}"><button type="button" class="btn btn-primary mt-5 mb-5" >start learning</button></a>
-
-              </p>
-            <p class="card-text"><small class="text-muted"></small></p>
+					<h4>Website Design And Development</h4>
             
-          </div>
-        </div>
-                   
+            <img src="{% static 'sitetemplate/images/undraw_designer.svg' %}" class="step__image">
+					</div>
+					<p class="step__text">Its is no longer news that every business in this modern 
+            era must be online to truly succeed. We are here to help you bring your business to the world.
+          </p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+					  <h4>Digital marketing</h4>
 
-        <!-- ((((((((((((((((((())))))))))))))))))) -->
-        <!-- Blog Post -->
-        <!-- <div class="card mb-4">
-          <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-          <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta
-               expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
-            Posted on January 1, 2017 by
-            <a href="#">Start Bootstrap</a>
-          </div>
-        </div> -->
+						<img src="{% static 'sitetemplate/images/undraw_responsive.svg' %}" class="step__image">
+					</div>
+					<p class="step__text">The era of flyers are gone, this days  everybody is hooked to their mobile devices.
+                                <p class="step__text">lets take advantage of that to connect directly to those who need your services.</p>
+                                <p class="step__text">technology made it possible and we are here to use it. Let nothing stop you.</p>
 
-        <!-- Pagination -->
-        <!-- <ul class="pagination justify-content-center mb-4">
-          <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
-          </li>
-          <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
-          </li>
-        </ul> -->
+          </p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+					<h4>Ecommerce Solutions</h4>
 
-      </div>
-
-
-    </div>
-    <!-- /.row -->
-
+						<img src="{% static 'sitetemplate/images/undraw_creation.svg' %}" class="step__image">
+					</div>
+					<p class="step__text">Expanding a business has never been this easy.
+                                With the power of technology you do not need to have a physical contact 
+                                with your customers, yet you can reach them any where with your products and services.
+          </p>
+				</div>
+			</div>
+		</div>
   </div>
-  <!-- /.container -->
+  <!-- Call To Action -->
+	<div class="cta cta--reverse">
+		<div class="container">
+			<div class="cta__inner">
+        <h2 class="cta__title">Contact</h2>
+      
+				<p class="cta__sub cta__sub--center"> Send us an E-mail: inspiredinfo@gmail.com</p>
+				<p class="cta__sub cta__sub--center"> call us on: my number here</p>
+				<a href="#" class="button button__accent">Contact Us</a>
+			</div>
+		</div>
+	</div>
+	<!-- Expanded sections -->
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="{% static 'sitetemplate/images/undraw_browser.svg' %}" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">About Us</h2>
+					<p class="expanded__text">Multi-Inspired digital services an online base agency that catters for 
+                                     all your web development needs. with many years of building successful business online we established
+                                    reputation among our clients. We don't just build sites we provide our clients with the 
+                                    neccessary informations that they need to build an oline business with an endless potential.
+           </p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Authentication pages -->
+<div class="auth">
+  <div class="container">
+    <div class="auth__inner">
+      <div class="auth__media">
+        <img src="{% static 'sitetemplate/images/undraw_selfie.svg' %}">
+      </div>
+      <div class="auth__auth">
+        <h1 class="auth__title">Contact Us</h1>
+        <p>Send us a message </p>
+        <form method='post' action="/example" autocompelete="new-password" role="presentation" class="form">
+          <input name="email" class="fakefield">
+          <label>Name</label>
+          <input type="text" name="email" id='email' placeholder="Enter your name">
+         
+          <label>phone number</label>
+          <input type="text" name="email" id='email' placeholder="number">
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; FranklyMade 2019</p>
+          <label>E-mail</label>
+          <input type="text" name="email" id='email' placeholder="You@example.com">
+          
+          <label>Enter Message</label>
+          <input type="text" name="email" id='email' placeholder="Enter message">
+          <!-- <label>Password</label>
+          <input type="password" name="password" id='password' placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" autocomplete="off">-->
+          <button type='submit' class="button button__accent">Send Message</button> 
+          <a href=""><h6 class="left-align" >We reply within 24hrs </h6></a>
+        </form>
+      </div>
     </div>
-    <!-- /.container -->
-  </footer>
+  </div>
+</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="{% static 'sitetemplate/images/together.svg' %}" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Ready for production or rapid prototyping</h2>
+					<p class="expanded__text">Contact us today to give your business another dimension of   
+                                   possibilities                                               
+          </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+	<!-- <div class="cta cta--reverse">
+		<div class="container">
+			<div class="cta__inner">
+				<h2 class="cta__title">Get started now</h2>
+				<p class="cta__sub cta__sub--center">Grab the production version and begin your project instantly.</p>
+				<a href="#" class="button button__accent">Download Evie</a>
+			</div>
+		</div>
+	</div> -->
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__row">
+				<a href="index.html" class="footer__textLogo ">copywrite &copy; Multi-Inspired</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							
+						</div>
+						<div class="footer__row">
+						 <a href="#" target="_blank" class="footer__link"></a>
+						</div>
+					</div>
+					<div class="footer__data__item">
+            Call Us
+						<div class="footer__row"><p>999999999999</p>
+             <br> Email Us
+              <div class="footer__row">  <p class="footer__link">ouremail@gmail.com</p>
+						</div>
+					</div>
+					<div class="footer__data__item">
+					<div class="footer__row">
+						<a href="#" target="_blank" class="footer__link"></a>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="{% static 'sitetemplate/js/app.min.js' %}"></script>
 
+<!-- java script from boostrap -->
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'sitetemplate/vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'sitetemplate/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'sitetemplate/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="{% static 'sitetemplate/js/scrolling-nav.js' %}"></script>
 </body>
-
 </html>

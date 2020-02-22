@@ -39,8 +39,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'myapp',
     'blog',
-    'portfolio',
-    'portinfo',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -67,9 +65,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR,'sitetemplate/templates'),
+            os.path.join(BASE_DIR,'sitetemplate/templates/sitetemplate'),
             os.path.join(BASE_DIR,'blog/templates/blog'),
-            os.path.join(BASE_DIR,'portfolio/templates/portfolio'),
                         
         ],
         'APP_DIRS': True,
