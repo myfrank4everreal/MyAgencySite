@@ -1,4 +1,272 @@
-{% extends 'base.html' %}
+{% extends 'base1.html' %}
+{% load static %}
 
+
+
+{% block content %}
+<header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Inspired Digital Business Development Services</div>
+        <div class="intro-heading "><h4>We are Multi-Inspired we provide you with all that your business needs to succeed online.
+            we serve corperations, small and medium scale businesses, Individuals.</h4></div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Services We Offer</h2>
+          <h3 class="section-subheading text-muted">We offer a wide range of online services which includes</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4 class="service-heading">Website Design and Development</h4>
+
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-square fa-stack-2x text-secondary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <p class="text-muted">Its is no longer news that every business in this modern 
+            era must be online to truly succeed. We are here to help you bring your business to the world.
+          </p></p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="service-heading">Digital marketing</h4>
+
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-square fa-stack-2x text-secondary"></i>
+            <i class="fas fa-circle fa-stack-1x fa-inverse"></i>
+          </span>
+          <p>The era of flyers are gone, this days  everybody is hooked to their mobile devices.
+            <p >lets take advantage of that to connect directly to those who need your services.</p>
+            <p>technology made it possible and we are here to use it. Let nothing stop you.</p>
+
+</p></p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="service-heading">E-Commerce Solutions</h4>
+
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-square fa-stack-2x text-secondary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+          <p class="text-muted">Expanding a business has never been this easy.
+            With the power of technology you do not need to have a physical contact 
+            with your customers, yet you can reach them any where with your products and services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Most Recent Projects</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">       
+       
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-circle fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'sitetemplate/img/portfolio/ecommercshop.jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Fully Functional</h4>
+            <p class="text-muted">E-Commerce Store</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-circle fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'sitetemplate/img/portfolio/coffeshop - Copy.jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Website Design</h4>
+            <p class="text-muted">coffee Shop</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-circle fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'sitetemplate/img/portfolio/branding1.jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Design</h4>
+            <p class="text-muted">Branding</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  
+  <!-- what our clients say -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Meet Our Team</h2>
+          <h3 class="section-subheading text-muted">Our team of professional ready to take your business to the next level.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{% static 'sitetemplate/img/team/1.jpg' %}" alt="">
+            <h4>jenifer hugat</h4>
+            <p class="text-muted">Design head</p>
+            <!-- <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{% static 'sitetemplate/img/team/3.jpg' %}" alt="">
+            <h4>Susan j.</h4>
+            <p class="text-muted">Lead Marketer</p>
+            <!-- <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{% static 'sitetemplate/img/team/2.jpg' %}" alt="">
+            <h4>Franklin O.</h4>
+            <p class="text-muted">Lead Developer</p>
+            <!-- <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">We are a team of amazing individual.
+               We believe in the power of togetherness, 
+               We derive joy and strength in the success of our business partners 
+               that is why we work hard to make your dreams a reality. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Call To Action -->
+<section class="" style=" margin-bottom: 50px; width: auto; height: 100px; background-color: rgb(112, 127, 139);">
+<div style=" " class="text-center">
+<!-- <div class="cta cta--reverse"> -->
+  <div class="container">
+      <!-- <div class="cta__inner"> -->
+  <h2 class="cta__title">Contact</h2>
+
+          <p class="cta__sub cta__sub--center">  call us on: +971 56 482 9274</p>
+          <p class="cta__sub cta__sub--center"> Send us a direct mail: inspiredbizinfo@gmail.com</p>
+          <a href="{%url 'contact' %}" class="btn btn-secondary">Contact Us</a>
+
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+  <!-- Clients -->
+  
+  <section class="py-5">
+    <div class="container">
+        <h4 class="text-center">Our Partners</h4><br><br><br>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="{% static 'sitetemplate/img/logos/envato.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="{% static 'sitetemplate/img/logos/designmodo.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="{% static 'sitetemplate/img/logos/themeforest.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="{% static 'sitetemplate/img/logos/creative-market.jpg' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
 
 

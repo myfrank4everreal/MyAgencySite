@@ -1,0 +1,3 @@
+[12004:7084:0413/053147.449:407187:ERROR:autoupdate_checker.cc(381)] Locking download lock failed.
+[12004:7084:0413/053147.449:407187:ERROR:autoupdate_checker.cc(333)] Unable to acquire locks! Download: true, metric: false
+[12004:7084:0413/053147.449:407187:ERROR:autoupdate_checker.cc(137)] Unable to prepare update checker runtime.
